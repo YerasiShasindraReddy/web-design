@@ -1,0 +1,237 @@
+
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+            
+.timeline {
+  width: 750px;
+  height: 100px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;      
+  justify-content: center;    
+}
+
+.timeline .events {
+  position: relative;
+  background-color: #606060;
+  height: 3px;
+  width: 100%;
+  border-radius: 4px;
+  margin: 5em 0;
+ }
+
+.timeline .events ol {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.timeline .events ul {
+  list-style: none;
+}
+
+/*
+.timeline .events ul li {
+  display: inline-block;
+  width: 24.65%;
+  margin: 0;
+  padding: 0;
+}
+*/
+
+.timeline .events ul li a {
+  
+  font-size: 1.25em;
+  color: #606060;
+  text-decoration: none;
+  position: relative;
+width: 100%;
+display: block;
+/*  top: -32px;*/
+}
+
+.timeline .events ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: -11px;
+  left: 50%;
+  right: auto;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 3px solid #606060;
+  background-color: #fff;
+  transition: 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.timeline .events ul li a:hover::after {
+  background-color: #f07d20;
+  border-color:  #007bff;
+}
+
+.timeline .events ul li a.selected:after {
+  background-color: #f07d20;
+  border-color: #007bff;
+}
+            
+.events-content {
+  width: 100%;
+  height: 180px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;      
+  justify-content: left;
+}
+
+.events-content li {
+  display: none;
+  list-style: none;
+}
+.events-content h3{
+    color:#000272;
+}
+.events-content li.selected {
+  display: initial;
+}
+
+.events-content .aaa,.events-content .bbb,.events-content .ccc{
+	/*width:250px; */
+	float:left;
+}
+.events-content .aaa p,.events-content .bbb p,.events-content .ccc p{
+	/*width:250px; */
+}
+.events li a{
+	position:relative;
+	
+}
+.events-content ol .aaa p{
+	position:absolute;
+}
+.events-content ol .bbb p{
+	position:absolute;
+}
+.events-content ol .ccc p{
+	position:absolute;
+	
+}
+/*
+.timeline .events ul .ddd a:after {
+	left:-115px !important;
+}
+.timeline .events ul .eee a:after {
+	left:-40px !important;
+}
+.timeline .events ul .fff a:after {
+	left:30px !important;
+}
+*/
+.section4{
+	background-color:#fafafa;
+}
+.section4 .col-12 h5,.section4 .col-12 h3{
+	text-align:center;
+}
+.events-content a:hover{
+    text-decoration: none;
+    color:#000272;
+}
+@media(min-width:320px) and (max-width:576px){
+    .subsection{
+        max-width:49% !important;
+    }
+    .section2 .sub2{
+        margin-right: 0px !important;
+    } 
+    .subsection3{
+        margin-top: 30px;
+    }
+    .section5 .card{
+        margin-bottom: 3rem;
+    }
+    .section5 .card3{
+        margin-bottom: 0px !important;
+    }
+    .section5 .media{
+        margin-top: 0px !important;
+    }
+    .subsection5{
+        height:75%;
+    }
+    .events-content{
+        margin-bottom: 30px;
+    }
+    .tick{
+        margin-bottom: 30px;
+    }
+    .subsection3{
+        margin-top: 30px;
+    }
+    .footer .col-12{
+        padding-bottom: 3rem;
+    }
+    .section2 .sub1,.section2 .sub2{
+        margin-bottom: 3rem;
+    }
+    .courses{
+        display:none;
+    }
+    .events-content ol{
+        padding-left: 0px;
+    }
+}
+@media(min-width:576px) and (max-width:768px){
+    .courses{
+        display:none;
+    }
+.section2 .col-6{
+    max-width:49% !important;
+}
+    .section2 .sub2{
+        margin-right: 0px !important;
+    } 
+    .section2 .sub1,.section2 .sub2{
+        margin-bottom: 3rem;
+    }
+   .section5 .card{
+        max-width:100% !important;
+        margin-bottom: 3rem !important;
+       display: block;
+       margin: auto;
+    }
+    .tick{
+        margin-bottom: 30px;
+    }
+    .events-content{
+        margin-bottom: 30px;
+    }
+    .subsection5{
+        height:75%;
+    }
+    .subsection3{
+        margin-top: 30px;
+    }
+    .footer .col-12{
+        padding-bottom: 3rem;
+    }
+    .events-content ol{
+        padding-left: 0px;
+    }
+}
+@media(min-width:768px){
+    .section5 .card{
+   max-width:27%;
+    }
+    .card2{
+    margin:0% 9% 0% 9%;
+}
+}
+
+.timeline .events ul li a:nth-child(1)::after{
+    
+}
